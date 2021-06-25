@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.addnote.AddNoteActivity"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/title_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:hint="Title"
+        android:textColorHint="#9E9E9E"/>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_below="@id/title_et"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <EditText
+        android:id="@+id/content_et"
+        android:layout_below="@id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:hint="Write what you need to remember"
+        android:layout_alignParentLeft="true"
+        android:textColorHint="#9E9E9E"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="add"
+        android:tint="@color/teal_200"
+        android:src="@drawable/ic_done"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="cancel"
+        android:tint="@color/black"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>
